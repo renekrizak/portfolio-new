@@ -1,0 +1,52 @@
+@use "../styles.scss" as *;
+
+.contact {
+    padding: 2rem 0;
+    background-color: $gray-bg-color;
+}
+
+.contact-content {
+        display: flex;
+        flex-direction: column;
+        height: 20rem;
+
+}
+
+.contact-title{ 
+    h1 {
+        font-size: 1.5rem;
+        font-weight: bolder;
+        line-height: 1.15;
+        font-family: $title-font;
+        color: $highlight-color;
+        overflow: hidden;
+        padding-bottom: 1rem;
+    }
+}
+
+.contact-subtitle {
+    h2 {
+        font-size: 2rem;
+        line-height: 1.4;
+        font-family: $title-font;
+        overflow: hidden;
+        padding-bottom: 3rem;
+    }
+}
+
+.contact-email {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    svg {
+        fill: $highlight-color;
+    }
+        h2 {
+            font-size: 2rem;
+            line-height: 1.4;
+            font-family: $title-font;
+            color: $highlight-color;
+            
+        }
+}
