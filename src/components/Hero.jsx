@@ -1,36 +1,36 @@
 import '../style/componentStyles/hero.scss'
-import HeroImage from '../images/HeroImage.jpg'
-import HtmlIcon from '../images/html-icon.png'
-import JsIcon from '../images/javascript-icon.png'
-import ReactIcon from '../images/react-icon.png'
-import CsIcon from '../images/csharp-icon.png'
-import SassIcon from '../images/sass-icon.png'
-import SqlIcon from '../images/sql-icon.png'
+import HeroMain from '../images/HeroImage.jpg'
+import HtmlLogo from '../images/html-icon.png'
+import JsLogo from '../images/javascript-icon.png'
+import ReactLogo from '../images/react-icon.png'
+import CsLogo from '../images/csharp-icon.png'
+import SassLogo from '../images/sass-icon.png'
+import SqlLogo from '../images/sql-icon.png'
 
 const Hero = () => {
     const stackImages = [
         {
-            img: HtmlIcon,
+            img: HtmlLogo,
             title: "Html"
         },
         {
-            img: JsIcon,
+            img: JsLogo,
             title: "Javascript",
         },
         {
-            img: ReactIcon,
+            img: ReactLogo,
             title: "React",
         },
         {
-            img: CsIcon,
+            img: CsLogo,
             title: "C#",
         },
         {
-            img: SassIcon,
+            img: SassLogo,
             title: "Sass",
         },
         {
-            img: SqlIcon,
+            img: SqlLogo,
             title: "Sql"
         }
 
@@ -55,7 +55,7 @@ const Hero = () => {
                             
                             </div>
                             <div className="hero-img">
-                                <img src={HeroImage} alt="photo of me" />
+                                <img src={HeroMain} alt="photo of me" />
                             </div>
                         </div>
                         <div className="tech-stack">
