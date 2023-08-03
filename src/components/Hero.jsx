@@ -55,7 +55,7 @@ const Hero = () => {
                             
                             </div>
                             <div className="hero-img">
-                                <img src={HeroMain} alt="me" />
+                                <img src={HeroMain} alt="portrait of me" />
                             </div>
                         </div>
                         <div className="tech-stack">
@@ -67,7 +67,7 @@ const Hero = () => {
                                 <ul>
                                     {stackImages.map((image) => (
                                         <li key={image.title}>
-                                            <img src={image.img} title={image.title}></img>
+                                            <img src={image.img} title={image.title} alt="tech stack icons"></img>
                                         </li>
                                     ))}
                                 </ul>
