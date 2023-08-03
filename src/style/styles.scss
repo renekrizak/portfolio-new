@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 $main-bg: white;
-$gray-bg-color: #f9f9f9;
+$gray-bg-color: #ebe8e8;
 $text-title-color: black;
 $text-color: #767676;
 $text-color-dark: #2d2e32;
@@ -9,13 +9,17 @@ $highlight-color: #147efb;
 $title-font: "Poppins", sans-serif;
 $text-font: "Mulish", sans-serif;
 $font-size-header: 1.25rem;
-
+$font-size-title: 4.5rem;
+$font-size-title-mobile: 4rem;
+$font-size-articles: 1.7rem;
+$font-size-articles-mobile: 1.5rem;
 
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 html {

@@ -1,0 +1,159 @@
+@use "../styles.scss" as *;
+
+.about {
+    padding: 5rem 0;
+    background-color: $gray-bg-color;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    height: 30rem;
+    overflow: hidden;
+}
+
+.about-image {
+    display: flex;
+    width: 50%;
+    align-items: flex-start;
+    justify-content: flex-end;
+    overflow-x: hidden;
+}
+
+.about-text {
+    display: flex;
+    width: 50%;
+    align-items: flex-start;
+    flex-direction: column;
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: bolder;
+        line-height: 1.15;
+        font-family: $title-font;
+        color: $highlight-color;
+        overflow: hidden;
+        padding-bottom: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        line-height: 1.4;
+        font-family: $title-font;
+        overflow: hidden;
+        padding-bottom: 1rem;
+    }
+
+    p {
+        font-family: $text-font;
+        color: $text-color;
+        line-height: 1.7;
+        font-size: 1.25rem;
+        word-spacing: 0.25rem;
+
+    }
+    
+    
+}
+
+.about-me-img-wrapper {
+    width: 85%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        max-width: 100%;
+        border-radius: 12px;
+        max-height: 100%;
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 540px) {
+    .about {
+        padding: 5rem 0;
+        height: auto;
+    }
+    
+    .about-content {
+        flex-direction: column;
+        height: 130vh;
+    }
+
+    .about-text {
+        
+        width: 100%;
+    }
+    .about-image {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+    .about-me-img-wrapper {
+        width: 100%;
+        height: 100%;
+    }
+    .about-text {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        p {
+            font-size: 1.2rem;
+            word-spacing: 0.125;
+            line-height: 1.4;
+        }
+
+        h1 {
+            font-size: 1.9rem;
+            
+        }
+    }
+
+}
+
+@media (max-width: 1000px) and (min-width: 540px) {
+    .about {
+        padding: 5rem 0;
+        height: auto;
+    }
+    
+    .about-content {
+        flex-direction: column;
+        height: 130vh;
+    }
+
+    .about-text {
+        
+        width: 100%;
+    }
+    .about-image {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+    .about-me-img-wrapper {
+        width: 100%;
+        height: 100%;
+    }
+    .about-text {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        p {
+            font-size: $font-size-articles-mobile;
+            word-spacing: 0.125;
+            line-height: 1.4;
+        }
+
+        h1 {
+            font-size: 1.9rem;
+            
+        }
+    }
+
+}
+

@@ -45,7 +45,7 @@ const Hero = () => {
                             <div className="hero-text">
                             <h1>Web and Desktop Developer</h1>
                             <p>Hi, I'm René Križák. A passionate Web and Desktop Developer
-                                based in Bratislava, Slovakia.
+                                based in Piestany, Slovakia.📍
                             </p>
                             <a href="https://github.com/renekrizak">
                             <svg xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 496 512">
@@ -66,7 +66,7 @@ const Hero = () => {
                             <div className="stack-icons">
                                 <ul>
                                     {stackImages.map((image) => (
-                                        <li>
+                                        <li key={image.title}>
                                             <img src={image.img} title={image.title}></img>
                                         </li>
                                     ))}
