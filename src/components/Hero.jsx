@@ -67,7 +67,7 @@ const Hero = () => {
                                 <ul>
                                     {stackImages.map((image) => (
                                         <li key={image.title}>
-                                            <img src={image.img} title={image.title} alt="tech stack icons"></img>
+                                            <img src={image.img} title={image.title} alt={image.title `icon`}></img>
                                         </li>
                                     ))}
                                 </ul>
