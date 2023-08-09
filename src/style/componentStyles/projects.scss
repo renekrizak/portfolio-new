@@ -1,151 +1,222 @@
 @use "../styles.scss" as *;
 
 .projects {
-    padding: 5rem 0;
-    background-color: $gray-bg-color;
+  padding: 5rem 0;
+  background-color: $gray-bg-color;
 }
 
 .projects-content {
-    display: flex;
-    flex-direction: column;
-    
-    height: 90rem;
+  display: flex;
+  flex-direction: column;
+
+  height: 90rem;
 }
 
 .project-title-wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .projects-title {
-    width: 85%;
-    h1 {
-        font-size: 1.5rem;
-        font-weight: bolder;
-        line-height: 1.15;
-        font-family: $title-font;
-        color: $highlight-color;
-        overflow: hidden;
-        padding-bottom: 1rem;
-    }
+  width: 85%;
+  h1 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    line-height: 1.15;
+    font-family: $title-font;
+    color: $highlight-color;
+    overflow: hidden;
+    padding-bottom: 1rem;
+  }
 }
 
 .projects-subtitle {
-    h2 {
-        font-size: 2rem;
-        line-height: 1.4;
-        font-family: $title-font;
-        overflow: hidden;
-        padding-bottom: 3rem;
-    }
+  h2 {
+    font-size: 2rem;
+    line-height: 1.4;
+    font-family: $title-font;
+    overflow: hidden;
+    padding-bottom: 3rem;
+  }
 }
 
 .project-left {
-    padding-left: 3rem;
-    width: 90%;
-    height: 25rem;
-    padding-right: 3rem;
-    display: flex;
-    flex-direction: row;
+  padding-left: 3rem;
+  width: 90%;
+  height: 25rem;
+  padding-right: 3rem;
+  display: flex;
+  flex-direction: row;
 }
 
 .project-left-image {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-left-image-container {
-    width: 80%;
-    height: 80%;
-    background-color: $highlight-color;
-    border-radius: 1rem;
+  width: 80%;
+  height: 80%;
+  background-color: $highlight-color;
+  border-radius: 1rem;
 }
 
 .project-left-text {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-left-text-container {
-    width: 85%;
-    height: 85%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 85%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    h1 {
-        font-size: 1.5rem;
-        font-weight: bolder;
-        line-height: 1.15;
-        font-family: $title-font;
-        color: $highlight-color;
-        overflow: hidden;
-        padding-bottom: 1rem;
-    }
-    p {
-        font-family: $text-font;
-        color: $text-color;
-        line-height: 1.7;
-        font-size: 1.25rem;
-        word-spacing: 0.25rem;
-        text-align: center;
-        padding-bottom: 1rem;
-    }
+  h1 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    line-height: 1.15;
+    font-family: $title-font;
+    color: $highlight-color;
+    overflow: hidden;
+    padding-bottom: 1rem;
+  }
+  p {
+    font-family: $text-font;
+    color: $text-color;
+    line-height: 1.7;
+    font-size: 1.25rem;
+    word-spacing: 0.25rem;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
 }
 
 .project-left-text-stack {
-    display: flex;
-    gap: 3rem;
-    justify-content: center;
-    h2 {
-        font-size: 1.5rem;
-        font-weight: bolder;
-        line-height: 1.15;
-        font-family: $title-font;
-        overflow: hidden;
-        padding-bottom: 1rem;
-    }
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    line-height: 1.15;
+    font-family: $title-font;
+    overflow: hidden;
+    padding-bottom: 1rem;
+  }
 }
 
 .project-left-text-demo {
+  display: flex;
+  gap: 3rem;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2rem;
+  a {
     display: flex;
-    gap: 3rem;
-    justify-content: space-evenly;
     align-items: center;
-    margin-top: 2rem;
-    a {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        font-size: 1.5rem;
-        font-weight: bolder;
-        line-height: 1.15;
-        font-family: $title-font;
-        overflow: hidden;
-        padding-bottom: 1rem;
-        text-decoration: none;
-        color: black;
+    gap: 1rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    line-height: 1.15;
+    font-family: $title-font;
+    overflow: hidden;
+    padding-bottom: 1rem;
+    text-decoration: none;
+    color: black;
+  }
+  svg,
+  a {
+    &:hover {
+      color: $highlight-color;
+      fill: $highlight-color;
+      transition: all 0.3s;
     }
-    svg, a {
-        &:hover {
-            color: $highlight-color;
-            fill: $highlight-color;
-            transition: all 0.3s;
-        }
-    }
+  }
 }
 
 .project-order-first {
-    order: 1;
+  order: 1;
 }
 
 .project-order-second {
-    order: 2;
+  order: 2;
 }
 
+@media (max-width: 1000px) {
+  .projects-content {
+    height: 110rem;
+  }
+  .project-left {
+    width: 100%;
+    height: 30%;
+    flex-direction: column;
+    padding: 0;
+  }
+  .project-left-image {
+    width: 100%;
+    height: 35%;
+  }
+  .project-left-text {
+    width: 100%;
+    height: 65%;
+  }
+  .projects-title {
+    overflow: hidden;
+    h1 {
+      overflow: hidden;
+      margin-bottom: 2vh;
+    }
+  }
+  .projects-subtitle {
+    overflow: hidden;
+    h2 {
+      overflow: hidden;
+    }
+  }
+  .project-left-text-container {
+    overflow: hidden;
+    height: 100%;
+    p {
+      font-family: $text-font;
+      color: $text-color;
+      line-height: 1.4;
+      font-size: 1rem;
+      word-spacing: 0.25rem;
+      text-align: center;
+      padding-bottom: 1rem;
+    }
+  }
+  .project-left-text-demo {
+    margin-top: 0;
+    a {
+      font-size: 1.1rem;
+    }
+  }
+  .project-order-second {
+    order: 1;
+  }
+  .project-order-first {
+    order: 2;
+  }
+}
+@media (max-width: 1000px) and (min-width: 540px) {
+  .project-left-text {
+    height: 45%;
+  }
+  .project-left-image {
+    height: 55%;
+  }
+  .project-left-text-container {
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}
