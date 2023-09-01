@@ -61,8 +61,19 @@
 .project-left-image-container {
   width: 80%;
   height: 80%;
-  background-color: $highlight-color;
-  border-radius: 1rem;
+
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 1rem;
+  }
 }
 
 .project-left-text {
@@ -218,5 +229,20 @@
     p {
       font-size: 1.2rem;
     }
+  }
+}
+
+@media (max-width: 450px) and (min-width: 300px) {
+  .projects-content {
+    height: 130rem;
+  }
+  .project-left {
+    height: 33%;
+  }
+  .project-left-image {
+    height: 50%;
+  }
+  .project-left-text {
+    height: 50%;
   }
 }
